@@ -1,0 +1,5 @@
+== README
+
+show errors in a simple rails form  
+not using simple-form  
+
