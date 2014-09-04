@@ -1,6 +1,11 @@
+require 'pp'
+
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+
+# fix deprecation warning
+I18n.enforce_available_locales = false
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
